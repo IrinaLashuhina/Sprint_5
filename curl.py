@@ -1,5 +1,7 @@
 class Urls:
-    MAIN_PAGE = 'https://stellarburgers.nomoreparties.site/'
-    LOGIN_PAGE = 'https://stellarburgers.nomoreparties.site/login'
-    REGISTER_PAGE = 'https://stellarburgers.nomoreparties.site/register'
-    ACCOUNT_PAGE = 'https://stellarburgers.nomoreparties.site/account/profile'
+    BASE = 'https://stellarburgers.nomoreparties.site'
+
+    MAIN_PAGE = f'{BASE}/'
+    LOGIN_PAGE = f'{BASE}/login'
+    REGISTER_PAGE = f'{BASE}/register'
+    ACCOUNT_PAGE = f'{BASE}/account/profile'

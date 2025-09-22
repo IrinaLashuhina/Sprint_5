@@ -32,6 +32,5 @@ class TestRegistration:
         driver.find_element(*Locators.PASSWORD).send_keys(password)
         driver.find_element(*Locators.REGISTRATION_BUTTON).click()
 
-        error_message = WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located(Locators.PASSWORD_ERROR)        )
+        error_message = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(Locators.PASSWORD_ERROR))
         assert error_message.is_displayed() and "Некорректный пароль" in error_message.text
